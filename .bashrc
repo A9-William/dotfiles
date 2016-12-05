@@ -1,5 +1,3 @@
-setterm -blength 0
-
 #alias vi='gvim'
 
 alias mux='tmux new-session -d  \; split-window -h \; split-window -d \; attach'
@@ -113,11 +111,4 @@ Jobs="\j"
 #  # @2 - Prompt when not in GIT repo
 #  echo " '$Yellow$PathShort$Color_Off'\$ "; \
 #fi)'
-export PS1="$ICyan$Time12h$Color_Off $ "
-
-if [ ! -z DISPLAY ]
-then
-	setterm -blength 0
-else
-	xset -b
-fi
+export PS1="$IGreen$Time12h$Color_Off $ "
